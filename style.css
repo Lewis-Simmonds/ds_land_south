@@ -12,8 +12,8 @@ main {
     display: block;
 }
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+    font-size: 2rem;
+    margin: 0.67rem 0;
 }
 a {
     background-color: transparent;
@@ -88,11 +88,12 @@ header > nav > p > a:hover {
 }
 
 article.about {
-    padding: 2.5vh 10%;
+    padding: 1vh 10%;
 }
 
 section.pages {
     display: flex;
+    flex-direction: column;
     height: auto;
 }
 
@@ -100,6 +101,8 @@ section.pages {
     display: flex;
     width: 100%;
     height: 25%;
+    margin: 1vh 0;
+    background-color: rgb(238, 236, 236); 
 }
 
 .page-image-container {
@@ -108,9 +111,8 @@ section.pages {
 }
 
 img.page-image {
-    height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .page-text {
@@ -135,4 +137,45 @@ img.page-image {
 a.page-link {
     text-decoration: none;
     color: black;
+}
+
+
+@media screen and (max-width: 479px) {
+    html {
+        font-size: 10px;
+    }
+
+    img.page-image {
+        height: 7.5vh;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 719px) {
+    html {
+        font-size: 14px;
+    }
+
+    img.page-image {
+        height: 10vh;
+    }
+}
+
+@media screen and (min-width:720px) and (max-width: 1079px){
+    html {
+        font-size: 18px;
+    }
+
+    img.page-image {
+        height: 15vh;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    html {
+        font-size: 22px;
+    }
+
+    img.page-image {
+        height: 20vh;
+    }
 }
