@@ -2,6 +2,7 @@
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
 }
 body {
     margin: 0;
@@ -28,3 +29,38 @@ img {
 }
 /*end of normalisation*/
 
+header {
+    display: inline-block;
+    width: 100%;
+    height: 10vh;
+}
+
+header > img {
+    display: inline-block;
+    height: 8vh;
+    margin: 1vh 5%;
+}
+
+header > nav {
+    display: inline-flex;
+    align-items: center;
+    float: right;
+    height: 100%;
+    margin: auto 5%;
+}
+
+header > nav > p {
+    text-align: center;
+    padding: 0 1vh;
+}
+
+header > nav > p > a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
+
+header > nav > p > a:hover {
+    color: black;
+}
