@@ -18,3 +18,27 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+.bg-text {
+    position: absolute;
+    top: 11vh;
+    width: 60%;
+    margin-left: 3vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 0.5vh;
+    border-radius: 0.5vh;
+}
+
+
+@media screen and (max-width: 719px) {
+    .bg-text {
+        top: 10vh;
+        margin-left: 2vh;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .bg-text {
+        top: 14vh;
+    }
+}
