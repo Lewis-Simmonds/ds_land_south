@@ -25,12 +25,43 @@
     width: 60%;
     margin-left: 3vh;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 0 0.5vh;
+    padding: 0 2vh;
     border-radius: 0.5vh;
 }
 
 article.services {
     padding: 3vh 10%;
+}
+
+.projects-container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 2px solid rgb(107, 107, 107); 
+    border-radius: 5px;
+}
+
+.project-container > img {
+    width: 80%;
+    margin: 10% 10% 5%;
+}
+
+.project-container > h3 {
+    width: 80%;
+    margin: 1% 10%;
+    line-height: 1;
+}
+
+.project-container > p {
+    width: 80%;
+    margin: 1% 10% 10%;
 }
 
 
