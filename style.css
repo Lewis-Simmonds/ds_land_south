@@ -38,6 +38,7 @@ header {
     height: 8vh;
     margin: 0;
     top: 0;
+    border-bottom: 1px solid rgb(107, 107, 107);
 }
 
 header > img {
@@ -46,7 +47,7 @@ header > img {
     margin: 1vh 5%;
 }
 
-header > nav {
+.full-list > nav {
     display: inline-flex;
     align-items: center;
     height: 100%;
@@ -54,21 +55,71 @@ header > nav {
     float: right;
 }
 
-header > nav > p {
+.full-list > nav > p {
     text-align: center;
     padding: 0 1vh;
 }
 
-header > nav > p > a {
-    font-size: 1.25rem;
+.full-list > nav > p > a {
+    font-size: 1.1rem;
     font-weight: 400;
     text-decoration: none;
     color: rgb(107, 107, 107);
 }
 
-header > nav > p > a:hover {
+.full-list > nav > p > a:hover {
     color: black;
 }
+
+.drop-down {
+    float: right;
+    overflow: hidden;
+}
+  
+.drop-down .drop-button {
+    border: none;
+    outline: none;
+    color: rgb(107, 107, 107);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0; 
+}
+  
+  /* Add a red background color to navbar links on hover */
+.drop-down:hover .drop-button {
+    color: black;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content > p > a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    color: black;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .drop-down:hover .dropdown-content {
+    display: block;
+  }
 
 .background {
     width: 100%;
@@ -192,6 +243,10 @@ footer {
         font-size: 10px;
     }
 
+    .full-list {
+        display: none;
+    }
+
     img.page-image {
         height: 7.5vh;
     }
@@ -200,6 +255,10 @@ footer {
 @media screen and (min-width:480px) and (max-width: 719px) {
     html {
         font-size: 14px;
+    }
+
+    .full-list {
+        display: none;
     }
 
     img.page-image {
@@ -212,6 +271,10 @@ footer {
         font-size: 18px;
     }
 
+    .drop-down {
+        display: none;
+    }
+
     img.page-image {
         height: 15vh;
     }
@@ -220,6 +283,10 @@ footer {
 @media screen and (min-width:1080px) {
     html {
         font-size: 22px;
+    }
+
+    .drop-down {
+        display: none;
     }
 
     img.page-image {
