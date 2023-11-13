@@ -41,10 +41,14 @@ header {
     border-bottom: 1px solid rgb(107, 107, 107);
 }
 
-header > img {
+header > a {
     display: inline-block;
     height: 6vh;
     margin: 1vh 5%;
+}
+
+header > a > img {
+    height: 6vh;
 }
 
 .full-list {
@@ -136,6 +140,10 @@ footer {
     margin: auto auto;
 }
 
+.item1 > img {
+    width: 100%;
+}
+
 .item2 {
     display: flex;
     grid-column: 2 / 3;
@@ -218,7 +226,7 @@ footer {
         height: 11vh;
     }
 
-    header > img {
+    header > a > img {
         height: 9vh;
     }
 
