@@ -128,7 +128,7 @@ header > img {
 footer {
     display: grid;
     grid: auto / 1fr 1fr 2fr;
-    margin: 1vh 0 2vh 0;
+    padding: 1vh 0 2vh 0;
 }
 
 .item1 {
