@@ -30,7 +30,7 @@
 }
 
 article.services {
-    padding: 3vh 10%;
+    padding: 3vh 10% 2vh;
 }
 
 .projects-container {
@@ -38,6 +38,7 @@ article.services {
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
+    margin-bottom: 3vh;
 }
 
 .project-container {
@@ -55,15 +56,10 @@ article.services {
 
 .project-container > h3 {
     width: 80%;
-    margin: 1% 10%;
-    line-height: 1;
-}
-
-.project-container > p {
-    width: 80%;
     margin: 1% 10% 10%;
+    line-height: 1;
+    text-align: center;
 }
-
 
 @media screen and (max-width: 719px) {
     .bg-text {
