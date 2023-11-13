@@ -47,7 +47,7 @@ header > img {
     margin: 1vh 5%;
 }
 
-.full-list > nav {
+.full-list {
     display: inline-flex;
     align-items: center;
     height: 100%;
@@ -55,25 +55,26 @@ header > img {
     float: right;
 }
 
-.full-list > nav > p {
+.full-list > p {
     text-align: center;
     padding: 0 1vh;
 }
 
-.full-list > nav > p > a {
-    font-size: 1.1rem;
+.full-list > p > a {
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
     color: rgb(107, 107, 107);
 }
 
-.full-list > nav > p > a:hover {
+.full-list > p > a:hover {
     color: black;
 }
 
 .drop-down {
     float: right;
     overflow: hidden;
+    margin: auto 10% auto 0;
 }
   
 .drop-down .drop-button {
@@ -85,41 +86,43 @@ header > img {
     font-family: inherit;
     margin: 0; 
 }
+
+.drop-button > img {
+    display: inline-block;
+    height: 2.5vh;
+    margin: 1.75vh 5%;
+}
   
-  /* Add a red background color to navbar links on hover */
 .drop-down:hover .drop-button {
     color: black;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
+    top: 80px;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
-  /* Links inside the dropdown */
-  .dropdown-content > p > a {
+.dropdown-content > p > a {
     float: none;
-    color: black;
+    color: rgb(107, 107, 107);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
+}
+
+.dropdown-content > p > a:hover {
     color: black;
-  }
+}
   
-  /* Show the dropdown menu on hover */
-  .drop-down:hover .dropdown-content {
+.drop-down:hover .dropdown-content {
     display: block;
-  }
+}
 
 .background {
     width: 100%;
@@ -285,8 +288,26 @@ footer {
         font-size: 22px;
     }
 
+    header {
+        height: 11vh;
+    }
+
+    header > img {
+        height: 9vh;
+    }
+
+    .full-list > p > a {
+        font-size: 1.25rem;
+        padding: 0 0.5vh;
+    }
+
     .drop-down {
         display: none;
+    }
+
+    .background {
+        padding-top: 40%;
+        background-size: cover;
     }
 
     img.page-image {
