@@ -71,3 +71,10 @@ a.page-link {
     text-decoration: none;
     color: black;
 }
+
+@media screen and (min-width:1080px) {
+    .background {
+        padding-top: 40%;
+        background-size: cover;
+    }
+}

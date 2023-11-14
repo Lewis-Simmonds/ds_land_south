@@ -240,11 +240,6 @@ footer {
         display: none;
     }
 
-    .background {
-        padding-top: 40%;
-        background-size: cover;
-    }
-
     img.page-image {
         height: 20vh;
     }
