@@ -28,6 +28,24 @@ article.contact {
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.container {
+    width: 45%;
+}
+
+.container p {
+    padding: 0;
+    margin: 0;
+}
+
+.address {
+    text-align: right;
+}
+
+.contact {
+    text-align: left;
 }
 
 @media screen and (min-width:1080px) {
