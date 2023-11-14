@@ -20,19 +20,28 @@
 }
 
 article.contact {
-    padding: 3vh 10%;
+    padding: 3vh 10% 1vh;
 }
 
 .contact-details {
     display: flex;
     width: 80%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 5vh;
 }
 
 .container {
-    width: 45%;
+    width: auto;
+    border: 2px solid rgb(107, 107, 107); 
+    border-radius: 5px;
+    padding: 2vh;
+    margin: 2vh;
+}
+
+.container h2 {
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .container p {
@@ -48,9 +57,25 @@ article.contact {
     text-align: left;
 }
 
+.container a {
+    font-weight: 600;
+    color: rgb(107, 107, 107);
+}
+
+.container > p > a:hover {
+    color: black;
+    text-decoration: none;
+}
+
 @media screen and (min-width:1080px) {
     .background {
         padding-top: 40%;
         background-size: cover;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    #phone-link {
+        display: none;
     }
 }
