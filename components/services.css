@@ -45,18 +45,22 @@ article.services {
     display: flex;
     flex-direction: column;
     width: 30%;
-    border: 2px solid rgb(107, 107, 107); 
-    border-radius: 5px;
 }
 
 .project-container > img {
     width: 80%;
     margin: 10% 10% 5%;
+    border-radius: 2vw;
 }
 
 .project-container > h3 {
     width: 80%;
-    margin: 1% 10% 10%;
+    margin: 10% 10%;
+    line-height: 1;
+    text-align: center;
+}
+
+.project-container > p {
     line-height: 1;
     text-align: center;
 }
