@@ -1,0 +1,9 @@
+.container {
+    margin-top: 8vh;
+}
+
+@media screen and (min-width:1080px) {
+    .container {
+        margin-top: 11vh;
+    }
+}
