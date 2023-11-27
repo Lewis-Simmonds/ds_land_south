@@ -1,0 +1,5 @@
+- Update links on services page to the corresponding projects
+- Add seperation between body and footer??
+- Correct behaviour when zooming page
+- Maybe adjust formatting on contact page
+- Better to have links in nav bar static or update depending on current page? Currently page user on does not show at top
