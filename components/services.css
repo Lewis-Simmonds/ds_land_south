@@ -45,12 +45,14 @@ article.services {
     display: flex;
     flex-direction: column;
     width: 30%;
+    background-color: rgb(238, 236, 236); 
+    border-radius: 3vw;
 }
 
 .project-container > a {
     width: 80%;
     margin: 10% 10% 0;
-    border-radius: 2vw;
+    border-radius: 1vw;
 }
 
 .project-container > a > img {
